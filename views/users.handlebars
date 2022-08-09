@@ -2,10 +2,11 @@
 
 
 <ul>
-    {{#each users}}
+    {{#each users as |user|}}
     <li>
-        <p>Username: {{ username }}</p>
-        <p>Password: {{ password }}</p>        
+        <p>ID: {{ user.id }}</p>
+        <p>Username: {{ user.username }}</p>
+        <p>Password: {{ user.password }}</p>        
     </li>
     {{/each}}
 </ul>
