@@ -1,8 +1,5 @@
-const { UUIDV4 } = require('sequelize');
 const { Model, DataTypes } = require('sequelize');
-const { toDefaultValue } = require('sequelize/types/utils');
 const sequelize = require('./../config/connection');
-
 
 
 class User extends Model { }
@@ -15,6 +12,7 @@ User.init(
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
+            defaultValue: DataTypes.UUIDV4,
         },
         // define a username column
         username: {
