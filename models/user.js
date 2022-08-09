@@ -8,11 +8,11 @@ User.init(
     {
         // define an id column
         id: {
-            type: DataTypes.UUID,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
-            defaultValue: DataTypes.UUIDV4,
+            // defaultValue: DataTypes.UUIDV4,
         },
         // define a username column
         username: {
@@ -34,7 +34,7 @@ User.init(
     },
     {
         sequelize,
-        modelName: 'user'
+        modelName: 'users'
     }
 );
 
