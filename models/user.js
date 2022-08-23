@@ -20,7 +20,7 @@ User.init(
             allowNull: false,
             validate: {
                 notNull: true,
-            },
+            }
         },
         // define a password column
         password: {
@@ -34,7 +34,7 @@ User.init(
     },
     {
         sequelize,
-        modelName: 'users'
+        modelName: 'users',
     }
 );
 
