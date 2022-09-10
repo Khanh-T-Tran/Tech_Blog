@@ -1,4 +1,6 @@
+console.log("testUser");
 const User = require('./User');
+console.log("testUser2");
 const Post = require('./Post');
 const Comment = require('./Comment');
 
